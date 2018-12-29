@@ -233,7 +233,7 @@ void Item::GenerateFiguresItem(int id)
 		SetScore(100);
 		break;
 	case OBJ_ITEM_MORNINGSTAR:
-		SetWeaponLevel(GetWeaponLevel() + 1);
+		SetWeaponLevel(1);
 		break;
 	case OBJ_ITEM_PORKCHOP:
 		SetHP(8);

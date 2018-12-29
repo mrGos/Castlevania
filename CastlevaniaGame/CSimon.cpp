@@ -16,7 +16,7 @@ void CSimon::Init()
 	SetSP(10);
 	SetScore(0);
 	SetLifeNumber(1);
-	SetWeaponLevel(SIMON_FULL_WEAPONLEVEL);
+	SetWeaponLevel(1);
 	//SetSubWeaponTag(OBJ_ITEM_SUBWEAPON_NULL);
 	SetSubWeaponTag(OBJ_ITEM_BOOMERANG);
 
@@ -693,11 +693,11 @@ void CSimon::DieHandle()
 					GAMESTATE->IsLockingKeyBoard = false;
 					VISUALFIGURES->IsStopTime = false;
 					VISUALFIGURES->timeCount = 300;
-
+					IsRunning = true;
+					SetState(IDLE);
 					if (IsInBossArea) {
 						SIMON->SetPosition(CAMERA->x + 100, 200);
-						SetState(IDLE);
-						IsRunning = true;
+						//SetState(IDLE);
 						return;
 					}
 
@@ -739,7 +739,13 @@ void CSimon::RetrieveFiguresFromItem(LPITEM item)
 
 	//retrieve Weapon level
 	if (weaponLevel < SIMON_FULL_WEAPONLEVEL)
+	{
 		SetWeaponLevel(GetWeaponLevel() + item->GetWeaponLevel());
+		if (weaponLevel == SIMON_FULL_WEAPONLEVEL) {
+			getWeapon()->SetDamage(2);
+		}
+	}
+
 
 	// retrieve subweapon tag
 	if (item->GetSubWeaponTag() != OBJ_ITEM_SUBWEAPON_NULL)

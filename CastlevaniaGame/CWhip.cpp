@@ -282,7 +282,7 @@ float CWhip::PosXAttack()
 
 CWhip::CWhip()
 {
-	id = OBJ_WEAPON_WHIP3;
+	id = OBJ_WEAPON_WHIP1;
 	//SIMON->SetWeaponLevel(3);
 
 	damage = WHIP_DAMAGE;
