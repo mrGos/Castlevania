@@ -49,6 +49,8 @@ public:
 	float xStairOffset = 0;
 	float yDeathFlag = 384.0f;
 
+	bool IsInBossArea = false;
+
 	int animId = 0;
 	int attackType;
 

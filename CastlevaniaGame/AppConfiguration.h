@@ -83,8 +83,12 @@
 
 #define OBJECTS_MAP1_FILEPATH					"gamedata\\Resources\\Map\\lv1\\Objects.txt"
 #define OBJECTS_INTRO_FILEPATH					"gamedata\\Resources\\Map\\intro\\Objects.txt"
+#define TEX_BBOX_FILEPATH						"gamedata\\Resources\\bbox.png"
+#define INTRO_TILESHEET_INFO_FILEPATH			"gamedata\\Resources\\Map\\intro\\intro_tilesheetINFO.txt"
+#define MAP1_TILESHEET_INFO_FILEPATH			"gamedata\\Resources\\Map\\lv1\\lv1_tilesheetINFO.txt"
+#define SIMON_DATA_FILEPATH						"gamedata\\Resources\\simonTextData.txt"
 
-#define SUBWEAPON_DAMAGE_DEFAULT				3
+#define SUBWEAPON_DAMAGE_DEFAULT				1
 #define SUBWEAPON_DAGGER_WIDTH					40
 #define SUBWEAPON_DAGGER_HEIGHT					22
 #define SUBWEAPON_DAGGER_VELOCITY_X				0.7f
@@ -95,7 +99,8 @@
 #define SUBWEAPON_BOOMERANG_VELOCITY_X			0.4f
 
 #define HP_DEFAULT								1
-#define ENEMY_DAMAGE_DEFAULT					1
+#define ENEMY_DAMAGE_DEFAULT					3
+#define BOSS_DAMAGE_DEFAULT						6
 
 #define ENEMY_GHOST_WIDTH						30
 #define ENEMY_GHOST_HEIGHT						67

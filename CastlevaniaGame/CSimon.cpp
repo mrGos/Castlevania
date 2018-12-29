@@ -13,7 +13,7 @@ void CSimon::Init()
 {
 	id = OBJ_ID::OBJ_SIMON;
 	SetHP(SIMON_FULL_HP);
-	SetSP(150);
+	SetSP(10);
 	SetScore(0);
 	SetLifeNumber(1);
 	SetWeaponLevel(SIMON_FULL_WEAPONLEVEL);
@@ -686,15 +686,25 @@ void CSimon::DieHandle()
 				if (GetTickCount() - timeStartReborn > timeDuringReborn) {
 					IsReborn = false;
 					SetHP(SIMON_FULL_HP);
-					SetState(IDLE);
+					//SetState(IDLE);
 					SetLifeNumber(GetLifeNumber() - 1);
-					SetPosition(GAMESTATE->stage->xReborn, GAMESTATE->stage->yReborn);
-					CAMERA->SetPosition(GAMESTATE->stage->xReborn - CAMERA->width / 2, 0);
-					if (CAMERA->x < 0) CAMERA->x = 0;
+
 					GAMESOUND->play(GAMESTATE->currentMusic);
 					GAMESTATE->IsLockingKeyBoard = false;
 					VISUALFIGURES->IsStopTime = false;
 					VISUALFIGURES->timeCount = 300;
+
+					if (IsInBossArea) {
+						SIMON->SetPosition(CAMERA->x + 100, 200);
+						SetState(IDLE);
+						IsRunning = true;
+						return;
+					}
+
+					SetPosition(GAMESTATE->stage->xReborn, GAMESTATE->stage->yReborn);
+					CAMERA->SetPosition(GAMESTATE->stage->xReborn - CAMERA->width / 2, 0);
+					if (CAMERA->x < 0) CAMERA->x = 0;
+
 					if (GAMESTATE->stage->stageNumber < 3) {
 						CScene_Level1* tempScene = dynamic_cast<CScene_Level1*>(SCENEMANAGER->curScene);
 						tempScene->FlagAboveBasement = true;

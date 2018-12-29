@@ -374,7 +374,7 @@ CVampireBat::CVampireBat(float x, float y, int direction)
 
 	SetState(ObjectEnemy::OBJ_ENEMY_VAMPIREBAT_IDLE);
 	SetHP(SIMON_FULL_HP);
-	SetDamage(2);
+	SetDamage(BOSS_DAMAGE_DEFAULT);
 	type = TeamType::ENEMY;
 
 	gamestate = GAMESTATE;

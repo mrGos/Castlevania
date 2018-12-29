@@ -48,9 +48,6 @@ void CScene_Level1::init()
 
 	CAMERA->SetCornerBlock(0, 5600);
 
-	LPITEM item = new Item(OBJ_ITEM_CROSS);
-	item->SetPosition(200, 100);
-	SCENEMANAGER->getGridManager()->AddObject(item);
 
 #pragma region Brickss
 
@@ -135,6 +132,7 @@ void CScene_Level1::update(DWORD time, vector<LPGAMEOBJECT>* coObjects)
 	if (SIMON->x > xBoosFlag) {
 		if (!CAMERA->isLocked) {
 			CAMERA->Lock();
+			SIMON->IsInBossArea = true;
 			CAMERA->SetCornerBlock(CAMERA->x, CAMERA->x + CAMERA->width);
 			boss->startCombat();
 			boss->setArea(CAMERA->x, 0, CAMERA->x + CAMERA->width, 382);

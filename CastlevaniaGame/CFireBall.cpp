@@ -33,7 +33,7 @@ CFireBall::CFireBall(float x, float y, int direction)
 	type = TeamType::ENEMY;
 
 	SetHP(1);
-	SetDamage(1);
+	SetDamage(ENEMY_DAMAGE_DEFAULT + 2);
 
 	this->x = x;
 	this->y = y;
