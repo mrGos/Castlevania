@@ -1,0 +1,8 @@
+Left Arrow : 		move left
+Right Arrow: 		move right
+Up Arrow: 		stair up
+Down Arrow: 		stair down
+Z: 			hit
+X: 			use Subweapon
+Space: 			Jump
+Number 1-5:		Set up Subweapon

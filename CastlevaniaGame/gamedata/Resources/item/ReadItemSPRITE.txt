@@ -1,0 +1,51 @@
+link name: http://castlevania.wikia.com/wiki/Castlevania_Inventory
+
+//small heart
+4001 24 34 16 16
+
+//big heart
+4002 48 27 66 42
+
+//money bag middle
+4003 110 24 133 46
+
+//morning star
+4004 172 24 196 48	
+
+//Dagger
+4005 220 33 244 46
+
+//Cross : destroy all enemy
+4006 267 28 291 52
+
+//Axe
+4007 314 31 336 52
+
+//Boomerang
+4008 361 31 383 52
+
+//Fire Bomb
+4009 403 35 427 59
+
+//PorkChop
+4010 447 34 471 53
+
+//MagicCrystal
+4011 594 31 613 53
+
+//Torch
+4051 18 287 42 332
+4052 44 284 66 332
+
+//Candle
+4054 88 311 100 332
+4055 101 308 112 332
+
+//buring effect
+4057 663 24 668 47
+4058 693 24 703 47
+4059 723 24 736 47
+
+//stopwatch
+4014 317 68 343 91
+

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{7AA0B7B5-CFFB-4D70-BFB9-DE116ACE3933}</ProjectGuid>
+    <RootNamespace>CastlevaniaGame</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExecutablePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;dinput8.lib;dxguid.lib;d3d9.lib;d3dx9.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BackgroundMap.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CAnimation.cpp" />
+    <ClCompile Include="CAnimationFrame.cpp" />
+    <ClCompile Include="CAxe.cpp" />
+    <ClCompile Include="CBat.cpp" />
+    <ClCompile Include="CBoomerang.cpp" />
+    <ClCompile Include="CCharacter.cpp" />
+    <ClCompile Include="CDagger.cpp" />
+    <ClCompile Include="CDObject.cpp" />
+    <ClCompile Include="CDog.cpp" />
+    <ClCompile Include="CDoor.cpp" />
+    <ClCompile Include="CEnemy.cpp" />
+    <ClCompile Include="CFireBall.cpp" />
+    <ClCompile Include="CFishMan.cpp" />
+    <ClCompile Include="CGameObjectManager.cpp" />
+    <ClCompile Include="CGhost.cpp" />
+    <ClCompile Include="CHollyWater.cpp" />
+    <ClCompile Include="CScene_Level1.cpp" />
+    <ClCompile Include="CStair.cpp" />
+    <ClCompile Include="CVampireBat.cpp" />
+    <ClCompile Include="CWeapon.cpp" />
+    <ClCompile Include="Grid.cpp" />
+    <ClCompile Include="GridContainer.cpp" />
+    <ClCompile Include="CGround.cpp" />
+    <ClCompile Include="CollisionManager.cpp" />
+    <ClCompile Include="CommonFunction.cpp" />
+    <ClCompile Include="CGameObject.cpp" />
+    <ClCompile Include="CGamePanel.cpp" />
+    <ClCompile Include="CGameState.cpp" />
+    <ClCompile Include="CGameWorld.cpp" />
+    <ClCompile Include="CGraphics.cpp" />
+    <ClCompile Include="CKeyboard.cpp" />
+    <ClCompile Include="CKeyGameHandler.cpp" />
+    <ClCompile Include="CScene.cpp" />
+    <ClCompile Include="CSceneManager.cpp" />
+    <ClCompile Include="CScene_EnterCastle.cpp" />
+    <ClCompile Include="CScene_Intro.cpp" />
+    <ClCompile Include="CScene_Menu.cpp" />
+    <ClCompile Include="CSimon.cpp" />
+    <ClCompile Include="CSprites.cpp" />
+    <ClCompile Include="CStage.cpp" />
+    <ClCompile Include="CTextures.cpp" />
+    <ClCompile Include="CWaveFile.cpp" />
+    <ClCompile Include="CWhip.cpp" />
+    <ClCompile Include="CWindow_Screen.cpp" />
+    <ClCompile Include="EnumCommon.cpp" />
+    <ClCompile Include="GameSound.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="LoadResources.cpp" />
+    <ClCompile Include="ReadFilesHelper.cpp" />
+    <ClCompile Include="CVisualFigures.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="Static.cpp" />
+    <ClCompile Include="winmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppConfiguration.h" />
+    <ClInclude Include="BackgroundMap.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CAnimation.h" />
+    <ClInclude Include="CAnimationFrame.h" />
+    <ClInclude Include="CAxe.h" />
+    <ClInclude Include="CBat.h" />
+    <ClInclude Include="CBoomerang.h" />
+    <ClInclude Include="CCharacter.h" />
+    <ClInclude Include="CDagger.h" />
+    <ClInclude Include="CDObject.h" />
+    <ClInclude Include="CDog.h" />
+    <ClInclude Include="CDoor.h" />
+    <ClInclude Include="CEnemy.h" />
+    <ClInclude Include="CFireBall.h" />
+    <ClInclude Include="CFishMan.h" />
+    <ClInclude Include="CGameObjectManager.h" />
+    <ClInclude Include="CGameWorld.h" />
+    <ClInclude Include="CGhost.h" />
+    <ClInclude Include="CHollyWater.h" />
+    <ClInclude Include="CScene_Level1.h" />
+    <ClInclude Include="CStair.h" />
+    <ClInclude Include="CVampireBat.h" />
+    <ClInclude Include="CWeapon.h" />
+    <ClInclude Include="GridContainer.h" />
+    <ClInclude Include="CGround.h" />
+    <ClInclude Include="CollisionManager.h" />
+    <ClInclude Include="CommonFunction.h" />
+    <ClInclude Include="CGameObject.h" />
+    <ClInclude Include="CGamePanel.h" />
+    <ClInclude Include="CGameState.h" />
+    <ClInclude Include="CGraphics.h" />
+    <ClInclude Include="CKeyboard.h" />
+    <ClInclude Include="CKeyGameHandler.h" />
+    <ClInclude Include="CScene.h" />
+    <ClInclude Include="CSceneManager.h" />
+    <ClInclude Include="CScene_EnterCastle.h" />
+    <ClInclude Include="CScene_Intro.h" />
+    <ClInclude Include="CScene_Menu.h" />
+    <ClInclude Include="CSimon.h" />
+    <ClInclude Include="CSprites.h" />
+    <ClInclude Include="CStage.h" />
+    <ClInclude Include="CTextures.h" />
+    <ClInclude Include="CWaveFile.h" />
+    <ClInclude Include="CWhip.h" />
+    <ClInclude Include="CWindow_Screen.h" />
+    <ClInclude Include="EnumCommon.h" />
+    <ClInclude Include="GameSound.h" />
+    <ClInclude Include="Grid.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="LoadResources.h" />
+    <ClInclude Include="ReadFilesHelper.h" />
+    <ClInclude Include="CVisualFigures.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="Static.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CastlevaniaGame.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
