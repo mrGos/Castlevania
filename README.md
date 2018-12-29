@@ -16,28 +16,28 @@ How to Play:
 <h2>Game Screenshots </h2>
  <p align="center"> 
  <img src="CastlevaniaGame/gamedata/Resources/Background/start_game.png">
+   (Menu game)
  </p>
- <span align="center">(Menu game) </span>
- <br><br>
+ <br>
 
 
  <p align="center"> 
  <img src="Screenshots/Inside.png">
+   (Inside)
  </p>
-<span align="center">(Inside) <span>   
  <br>
    
    
  <p align="center"> 
  <img src="Screenshots/basement.png">
+   (Basement)
  </p>
-<span align="center">(Basement) <span>
  <br>
    
    
  <p align="center"> 
  <img src="Screenshots/bossArea.png">
+   (Boss level 1)
  </p>
-<span align="center">(Boss level 1) <span>
  <br>
 
