@@ -5,7 +5,9 @@ Game C++ with Direct X Framework
 
 Game Original Framework: https://github.com/dungdna2000/gamedev-intro-tutorials
 
-Currently running on Solution Platforms x86,  directX version 9
+Currently running on Solution Platforms x86
+
+DirectX version 9
 
 How to Play:
    + Left Arrow : 		    Move left
