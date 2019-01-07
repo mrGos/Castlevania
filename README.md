@@ -1,9 +1,11 @@
-# Castlevania
+<h1 align="center">INTRODUCE TO GAME PROGRAMING</h1>
+<h2 align="center">Castlevania</h2>
+
 Game C++ with Direct X Framework	 
 
 Game Original Framework: https://github.com/dungdna2000/gamedev-intro-tutorials
 
-Currently running on Solution Platforms x86
+Currently running on Solution Platforms x86,  directX version 9
 
 How to Play:
    + Left Arrow : 		    Move left
